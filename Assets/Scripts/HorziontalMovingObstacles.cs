@@ -32,19 +32,11 @@ public class HorziontalMovingObstacles : MonoBehaviour
         if (collisionInfo.collider.name == "HMovingObstacleLeft")
         {
             rb.AddForce(0, 0, -500000 * Time.deltaTime);
-            Debug.Log("HIT THE LEFT OBSTACLE");
         }
         if (collisionInfo.collider.name == "HMovingObstacleRight")
         {
             rb.AddForce(0, 0, 500000 * Time.deltaTime);
         }
        
-        //rb.AddForce(0, 0, -500000 * Time.deltaTime);
-        //if (collisionInfo.collider.tag == "Ground")
-        //{
-
-        //  transform.position = initial;
-
-        //}
     }
 }

@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (transform.position.y >= 0.99 && transform.position.y <=1.01)
             {
-                rb.AddForce(0, 5200 * movementForce * Time.deltaTime, 0);
+                rb.AddForce(0,10 , 0, ForceMode.Impulse);
             }
            
         }
