@@ -5,7 +5,6 @@ public class MovingObs : MonoBehaviour
 {
     public Rigidbody rb;
     public Vector3 initial;
-    public Vector3 rot;
 
     void OnCollisionEnter(Collision collisionInfo)
     {
@@ -13,8 +12,6 @@ public class MovingObs : MonoBehaviour
         {
             //movement.enabled = false;
             transform.position = initial;
-
-            Debug.Log("obs hit the ground!");
         }
     }
 }
