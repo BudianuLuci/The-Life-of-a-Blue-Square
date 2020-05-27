@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 1f; //1f
 
     public GameObject completeLevelUI;
+    public GameObject YouDiedUI;
 
     public void CompleteLevel()
     {
@@ -15,19 +16,13 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        if (gameHasEnded == false)
-        {
-            gameHasEnded = true;
-            Debug.Log("GAME OVER!");
-            //Restart game
-            Invoke("Restart", restartDelay);
-        }
+        YouDiedUI.SetActive(true);
     }
-
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        YouDiedUI.SetActive(false);
+
     }
 
-    
 }
