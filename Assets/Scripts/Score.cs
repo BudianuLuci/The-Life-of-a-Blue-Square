@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class Score : MonoBehaviour
     public float distance;
     public float total;
     public float travelled;
+    public Transform finishLine;
     // Update is called once per frame
 
     void Update()
@@ -21,7 +23,10 @@ public class Score : MonoBehaviour
         }
         else {
             distance = player.position.x - startPosition;
-            total = Mathf.Abs(finishPosition) + Mathf.Abs(startPosition);
+            if (finishLine.position.x < 0)
+            {
+                total = Mathf.Abs(startPosition) - Mathf.Abs(finishLine.position.x);
+            }
             travelled = distance/total*100;
             scoreText.text = travelled.ToString("F1")+"%";
             //scoreText.text = player.position.x.ToString();

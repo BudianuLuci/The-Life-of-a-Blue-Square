@@ -10,13 +10,13 @@ EditorBuildSettings:
     guid: c45f0e96de93bff46b10dce1c26c7ffb
   - enabled: 1
     path: Assets/level1.unity
-    guid: f802dd9f6f4c5a543b8cc882b7c4d1dd
+    guid: 7c225b7f7e6c90c4684aad7d1f1f6b15
   - enabled: 1
     path: Assets/level2.unity
-    guid: f7542ffddb809fc4c998fa23a10f5ac9
+    guid: 631e7ad3aec48d64385c3cd4062496cf
   - enabled: 1
     path: Assets/level3.unity
-    guid: 692761012eac5a340940fd22389417b1
+    guid: f802dd9f6f4c5a543b8cc882b7c4d1dd
   - enabled: 1
     path: Assets/Credits.unity
     guid: 48693fdd1b4de5a4b9f2ab94a1691ff3
