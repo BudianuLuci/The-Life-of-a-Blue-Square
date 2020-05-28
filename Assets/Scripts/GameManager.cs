@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
+        Debug.Log(SceneManager.GetActiveScene().name);
     }
 
     public void EndGame()
